@@ -12,3 +12,8 @@ const TextStyle kHeading01 = TextStyle(
   color: Color(0xFF4A69FF),
   decoration: TextDecoration.none,
 );
+
+const List<Color> kButtonGradiant = <Color>[
+  Color(0xFF4A69FF),
+  Color(0xFF4AD384),
+];
