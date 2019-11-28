@@ -19,6 +19,6 @@ Also, we create a gradient button with an icon.
     ```
 
 
- ![App Screenshot](https://flutter.dev/docs/get-started/codelab)
+ ![App Screenshot](https://github.com/abuanwar072/Flutter-Auth-Screen-01/blob/master/lib/Screenshot_1574914529.png)
 
 
