@@ -1,16 +1,24 @@
-# auth_screen
+# Login Screen Using Flutter
+This is a simple login screen where we create a custom textInput widget where you can put
 
-A new Flutter project.
+    ```dart
+    @required this.hint,
+    @required this.inputIcon,
+    this.borderRadious = 40.0,
+    this.keybord = TextInputType.text,
+    this.iconColor = kPrimary,
+    this.isPass = false,
+    this.format,
+    ```
+Also, we create a gradient button with an icon.
 
-## Getting Started
+    ```dart
+    final double radious;
+    final String text;
+    final IconData icon;
+    ```
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+ ![App Screenshot](https://flutter.dev/docs/get-started/codelab)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
