@@ -1,5 +1,6 @@
 import 'package:auth_screen/constant.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class MyInputFiled extends StatelessWidget {
   const MyInputFiled({
@@ -9,6 +10,7 @@ class MyInputFiled extends StatelessWidget {
     this.keybord = TextInputType.text,
     this.iconColor = kPrimary,
     this.isPass = false,
+    this.format,
   });
 
   final double borderRadious;
@@ -17,6 +19,7 @@ class MyInputFiled extends StatelessWidget {
   final IconData inputIcon;
   final Color iconColor;
   final bool isPass;
+  final List<TextInputFormatter> format;
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +40,7 @@ class MyInputFiled extends StatelessWidget {
         child: TextField(
           obscureText: isPass,
           keyboardType: keybord,
+          inputFormatters: format,
           style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 18,

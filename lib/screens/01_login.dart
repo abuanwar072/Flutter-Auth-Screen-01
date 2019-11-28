@@ -2,6 +2,7 @@ import 'package:auth_screen/constant.dart';
 import 'package:auth_screen/widgets/gradientButton.dart';
 import 'package:auth_screen/widgets/inputFiled.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class Login01 extends StatelessWidget {
   @override
@@ -58,6 +59,28 @@ class Login01 extends StatelessWidget {
                 text: "Sign In",
                 icon: Icons.arrow_forward,
               ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            RichText(
+              text: TextSpan(children: [
+                TextSpan(
+                  text: "Don’t have an account? ",
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF757575).withOpacity(.5),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                TextSpan(
+                  text: "Sign Up".toUpperCase(),
+                  style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: kPrimary),
+                )
+              ]),
             ),
           ],
         ),
